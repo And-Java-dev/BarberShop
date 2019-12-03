@@ -21,7 +21,7 @@ import java.util.List;
 public class AddMasterServlet extends HttpServlet {
     private MasterManager masterManager = new MasterManager();
 
-    private static final String IMAGE_UPLOAD_DIR = "D:\\Java\\BarberShop\\images\\";
+    private static final String IMAGE_UPLOAD_DIR = "D:\\Java\\gitHub\\BarberShop\\images\\";
 
 
     @Override

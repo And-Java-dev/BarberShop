@@ -12,7 +12,7 @@ import java.io.IOException;
 
 @WebServlet(urlPatterns = "/getImage")
 public class GetImageServlet extends HttpServlet {
-    private static final String IMAGE_UPLOAD_DIR = "D:\\Java\\BarberShop\\images\\";
+    private static final String IMAGE_UPLOAD_DIR = "D:\\Java\\gitHub\\BarberShop\\images\\";
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

@@ -30,7 +30,7 @@ public class DBConnectionProvider {
 
     private void loadProperties() throws IOException {
         Properties properties = new Properties();
-        properties.load(new FileInputStream("D:\\Java\\BarberShop\\src\\main\\resources\\dbConfig.properties"));
+        properties.load(new FileInputStream("D:\\Java\\gitHub\\BarberShop\\src\\main\\resources\\dbConfig.properties"));
         dbUrl = properties.getProperty("db.url");
         dbUsername = properties.getProperty("db.username");
         dbPassword = properties.getProperty("db.password");

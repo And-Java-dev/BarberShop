@@ -21,7 +21,7 @@ import java.util.List;
 public class AddImageServlet extends HttpServlet {
     private ImageManager imageManager = new ImageManager();
 
-    private static final String IMAGE_UPLOAD_DIR = "D:\\Java\\BarberShop\\images\\";
+    private static final String IMAGE_UPLOAD_DIR = "D:\\Java\\gitHub\\BarberShop\\images\\";
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

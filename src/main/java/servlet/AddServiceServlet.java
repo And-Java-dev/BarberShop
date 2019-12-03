@@ -21,7 +21,7 @@ public class AddServiceServlet extends HttpServlet {
     private ServiceManager serviceManager = new ServiceManager();
 
 
-    private static final String IMAGE_UPLOAD_DIR = "D:\\Java\\BarberShop\\images\\";
+    private static final String IMAGE_UPLOAD_DIR = "D:\\Java\\gitHub\\BarberShop\\images\\";
 
 
     @Override
