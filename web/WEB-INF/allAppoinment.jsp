@@ -10,9 +10,13 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
 <link rel="stylesheet" href="../css/Style1.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+
 </head>
 <body>
-<table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+<table id="dt-basic-checkbox" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
     <thead>
     <tr>
         <th class="th-sm">Name
@@ -27,6 +31,8 @@
         </th>
         <th class="th-sm">Time
         </th>
+        <th class="th-sm">Date
+        </th>
     </tr>
     </thead>
     <tbody>
@@ -39,6 +45,7 @@
         <td><%=apointment.getService().getName()%></td>
         <td><%=apointment.getMaster().getName()%></td>
         <td><%=apointment.getTime()%></td>
+        <td><%=apointment.getDate()%></td>
     </tr>
 
     <% } %>
@@ -58,13 +65,23 @@
         </th>
         <th>Time
         </th>
+        <th>Date
+        </th>
     </tr>
     </tfoot>
 </table>
 <script>
-    $(document).ready(function () {
-        $('#dtBasicExample').DataTable();
-        $('.dataTables_length').addClass('bs-select');
+    $('#dt-basic-checkbox').dataTable({
+
+        columnDefs: [{
+            orderable: false,
+            className: 'select-checkbox',
+            targets: 0
+        }],
+        select: {
+            style: 'os',
+            selector: 'td:first-child'
+        }
     });
 </script>
 </body>

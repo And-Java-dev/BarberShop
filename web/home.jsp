@@ -745,7 +745,7 @@
 
     });
     var timepicker = $('#timepicker').timepicker({
-        format: 'hh:MM'
+        format: 'hh:MM:ss'
     });
 </script>
 </body>

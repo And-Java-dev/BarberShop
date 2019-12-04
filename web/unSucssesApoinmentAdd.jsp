@@ -236,6 +236,26 @@
         </div>
     </div>
 </form>
+<form id="test-form2" class="white-popup-block mfp-hide" action="/login" method="post">
+    <div class="popup_box ">
+        <div class="popup_inner">
+            <h3>Admin Login</h3>
+            <form action="#">
+                <div class="row">
+
+                    <div class="col-xl-6 col-md-6">
+                        <input type="text" placeholder="email" name="email">
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <input type="password" placeholder="password" name="password">
+                    </div>
+
+                    <button type="submit" class="boxed-btn3">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</form>
 
 <script src="js/vendor/modernizr-3.5.0.min.js"></script>
 <script src="js/vendor/jquery-1.12.4.min.js"></script>

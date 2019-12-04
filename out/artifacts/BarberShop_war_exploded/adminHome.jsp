@@ -634,7 +634,7 @@
                 $("#content").html(result);
             }
         });
-    }, 5000);
+    }, 10000);
 
 </script>
 </body>
